@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col title">Price de rendez-vous en ligne</div>
+  </div>
+  <div class="row">
+    <div class="col titre">recherche d'un medicien</div>
+  </div>
+  <div class="col selct-medicien">
+    Spécialité: <select name="medicien"  (change)="specialte($event)">
+      <option *ngFor="let m of mediciens" [value]="m.specialite" >{{m.specialite}}</option>
+    </select>
+  </div>
+  <div class="col">
+    <div><p id="demo"></p></div>
+  </div>
+  <div class="col">
+    <div><p id="demo2"></p></div>
+  </div>
+</div>

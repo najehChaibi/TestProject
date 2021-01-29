@@ -1,0 +1,17 @@
+.title{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  word-spacing: 1.6px;
+}
+.titre{
+  font-size: 30px;
+  margin-top: 10px;
+}
+.selct-medicien{
+   font-size: medium;
+   margin: 20px;
+}

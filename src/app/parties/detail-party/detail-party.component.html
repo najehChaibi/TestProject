@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col title" >Welcom to Jtest magazine!</div>
+  </div>
+  <div class="row" *ngFor="let p of parties">
+    <div class="col">
+      <div class="card"  *ngIf="p.nb_place > 0 && p.nb_place < 40" {
+           style="background-color: orange;"
+        }  else *ngIf="p.nb_place > 40 && p.nb_place < 100"  {
+          style="background-color: green;"
+        }else *ngIf="p.nb_place > 100" {
+          style="background-color: yellow;"
+         }>
+        <p> <span>{{p.title}}</span></p>
+      <p>Date: <span>{{p.date}}</span> </p>
+      <p>Type: <span>{{p.type}}</span> </p>
+      <p>Nomber de places: <span>{{p.nb_place}}</span></p>
+      <p>Description: <span>{{p.description}}</span> </p>
+      <p><button type="button" class="btn btn-light" (click)="reserve()">Réserver</button></p>
+      <p id="demo"></p>
+    </div>
+
+    </div>
+  </div>
+</div>
